@@ -1,0 +1,17 @@
+
+<form aciton="<%= contact_submit_path %>" class="card" method="POST">
+    <div class="card-body">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        
+    
+        <input 
+            placeholder="name"
+            type="text" 
+            name="name" 
+            class="form-control form-control-sm" 
+            autofocus
+        /> 
+        
+        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+    </div>
+</form>
